@@ -76,3 +76,13 @@ console.log(welcomeGreet('Alice'));
 
 const helloGreet = createGreeting('Hello');
 console.log(helloGreet('Winnie'));
+
+// Code along from class
+const createGreeting2 = (greet) => {
+  return (name) => {
+    return `${greet} ${name}`;
+  }
+}
+
+const greetInstance = createGreeting2('Yo Whats up');
+console.log(greetInstance('kyle'));
